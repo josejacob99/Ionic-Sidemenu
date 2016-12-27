@@ -1,0 +1,32 @@
+<ion-menu [content]="content">
+  <ion-content>
+    <ion-list>
+     <section class="profile-view">
+<div class="content">
+<div class="profile-pic-name">
+<div class="pic">
+<img src="/assets/images/a0.jpg" />
+</div> 
+<h2 class="def-pic hide">SN</h2>
+<h3>Sidarth Nath</h3>
+<p>Safeer@gmail.com</p>
+</div>
+<div class="user-details">
+<ul>
+<li class="active">
+<p><i class="fa fa-home"></i>Home</p>
+</li>
+<li class="border-bottom">
+<p><i class="fa fa-gears"></i>Settings</p>
+</li>
+</ul>
+</div>
+</div>
+</section>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
